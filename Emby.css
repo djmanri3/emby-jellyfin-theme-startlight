@@ -1,0 +1,567 @@
+:root {
+	 /*--wallpaper: url('https://img.freepik.com/free-photo/panoramic-view-dubai-city-illuminated-neon-spectrum_23-2151305329.jpg'); /* Wallpaper Neon City */
+         --wallpaper: url('https://images.pling.com/img/00/00/49/90/47/1361442/ee6523267a2650f972201ddab5fdea9c297a.jpg');
+	 --color: #00ffea /* Blue Theme */
+        /*--color: #d370fa /* Purple Theme */
+        /* --color: #f56470 /* Red Theme */
+       /* --color: #52B54B /* Green Theme */
+}
+
+.paper-icon-button-light.md-icon {
+  background: #00000000 !important; 
+  backdrop-filter: blur(10px);
+  color: var(--color)
+}
+
+html:root {
+    --theme-primary-color: var(--color) !important;
+    --theme-accent-text-color: var(--color) !important;
+    --theme-primary-color-lightened: var(--color) !important;
+	--theme-accent-text-color-darkbg: var(--color) !important;
+	--theme-accent-text-color-lightbg: var(--color) !important;
+    --theme-icon-focus-background: rgba(255, 0, 0, 0.2) !important;
+}
+
+/* Try to make Home screen played select button bottom right MyColour not green */
+button.playstatebutton-icon-played {background: var(--color)!important;
+border-color: var(--color);}
+
+/* Hide radius border of play boton on screen to play music */
+.cardOverlayButton-hover {
+	border: .0em solid #ddd;
+}
+
+.navMenuOption-listItem-content.listItem-content.listItem-content-bg.listItemContent-touchzoom {
+	backlground: var(--color)
+}
+
+/* ----- 1.1 Buttons ----- */
+/* 1.1.1 Checkboxes */
+.emby-checkbox:checked + span + span + .checkboxOutline > .checkboxOutlineTick {
+  background-color: var(--color) !important; }
+
+.emby-checkbox:checked + span + span + .checkboxOutline,
+.progressring-spiner {
+  border-color: var(--color) !important; }
+
+.emby-checkbox:focus + span + .emby-checkbox-focushelper {
+  background-color: var(--color) !important;
+  opacity: 0.26 !important; }
+  
+.emby-checkbox:checked+.checkboxLabel::before {
+	background-color: var(--color) !important;
+	border-radius: 0em !important;
+}
+
+/* Server check update box */
+.serverUpToDateCheckIcon {
+    background-color: #4bb5a0 !important;
+	border-radius: 0em !important;
+}
+
+/* 1.1.2 Rectangles */
+.raised {
+  background: #404040 !important;
+  color: #fff !important; }
+
+.button-submit, .button-accent {
+  background: var(--color) !important;
+  color: #fff; }
+
+.raised-mini.emby-button {
+  background: #ffffff21 !important;
+  color: var(--color)!important; }
+
+/* Restart */
+.btnRestartContainer.emby-button {
+  background: var(--color) !important;
+  color: #fff; }
+
+/* Play & Resume */
+.btnPlaySimple.emby-button {
+  background: var(--color) !important;
+  color: #fff; }
+
+.btnResume.emby-button {
+  background: #0C57D6 !important;
+  color: #fff; }
+/* 1.1.3 Links & Text buttons */
+.button-link, .button-flat-accent, .button-accent-flat,
+.textlink {
+  color: var(--color) !important; }
+
+.button-link:hover, .button-flat-accent:hover,
+.button-accent-flat:hover, .textlink:hover {
+  color: #9b9b9b !important; }
+
+.button-link:active, .button-flat-accent:active,
+.button-accent-flat:active, .textlink:active {
+  color: #0C57D6 !important; }
+
+/* Top Header */
+.emby-tab-button-active {
+  color: var(--color) !important; }
+  
+/* 1.1.4 Others */
+/* Alpha Picker */
+.alphaPickerButton-selected, .alphaPickerButton-tv:focus {
+  background-color: var(--color) !important;
+  color: #fff !important; }
+
+/* Radio Buttons */
+.mdl-radio__inner-circle {
+  background: black !important; }
+
+.mdl-radio__button:checked + .mdl-radio__label + .mdl-radio__outer-circle {
+  border: 2px solid var(--color) !important; }
+
+.mdl-radio__button:checked:focus + .mdl-radio__label + .mdl-radio__outer-circle + .mdl-radio__inner-circle {
+  -webkit-box-shadow: 0 0 0 10px rgba(66, 133, 244, 0.26) !important;
+  box-shadow: 0 0 0 10px rgba(66, 133, 244, 0.26) !important; }
+
+/* Control Group Buttons */
+div[data-role="controlgroup"] a.ui-btn-active[data-role='button'] {
+  background: black !important;
+  color: var(--color) !important; }
+  
+/* ----- 1.2 Details ----- */
+/* 1.2.1 Circles */
+/*.listItemIcon:not(.listItemIcon-transparent) {
+    background-color: $accent-color !important; }*/
+.dashboardSection i.listItemIcon.md-icon {
+  background-color: var(--color) !important; }
+
+.scheduledTaskPaperIconItem[data-status="Running"] i.listItemIcon.md-icon {
+  background-color: #0C57D6 !important; }
+
+/* Focus Helper circles */
+.paper-icon-button-light:focus {
+  color: var(--color) !important; 
+}
+
+/* 1.2.2 Indicators */
+.countIndicator, .playedIndicator {
+  background: var(--color) !important; }
+
+.levelNormal {
+  background-color: var(--color) !important; }
+
+.fullSyncIndicator {
+  background: var(--color) !important;
+  color: #fff; }
+
+.playstatebutton-played i, .ratingbutton-withrating i {
+  color: var(--color) !important; }
+
+p#pUpToDate i.md-icon {
+  background-color: var(--color) !important; }
+
+/* Loading Spinners */
+.mdl-spinner__layer-1, .mdl-spinner__layer-2, .mdl-spinner__layer-3,
+.mdl-spinner__layer-4 {
+  border-color: var(--color) !important; }
+
+.progressring-spiner {
+  border: 0.25em solid var(--color) !important; }
+
+/* 1.2.3 Fonts */
+.selectLabelFocused, .textareaLabelFocused, .inputLabelFocused {
+  color: var(--color) !important; }
+
+.secondary.listItemBodyText span, div#divRunningTasks span {
+  color: var(--color) !important; }
+
+/* 1.2.4 Icons */
+.starIcon, .mediaInfoTimerIcon {
+  color: var(--color) !important; }
+
+/* Top Header */
+.btnActiveCast {
+  color: var(--color) !important; }
+
+/* Now Playing Bar & Now Playing Page */
+.repeatActive,
+button.btnCommand.repeatToggleButton.autoSize.nowPlayingPageRepeatActive {
+  color: var(--color) !important; }
+  
+/* 1.2.5 Dialogs & Action Sheets */
+/* 1.2.6 Others */
+/* General Accent Color Modifications */
+:focus {
+  outline: var(--color) auto 5px; }
+
+select:focus {
+  border-color: var(--color) !important; }
+
+::selection {
+  background-color: #0C57D6 !important; }
+
+.emby-input:focus, .emby-textarea:focus {
+  border-color: var(--color) !important; }
+
+/* Google Now Playing Bar & Now Playing Page */
+.iconOsdProgressInner, .mdl-slider__background-lower, .sliderBubble,
+.mdl-slider::-webkit-slider-thumb {
+  background: var(--color) !important; }
+
+.mdl-slider:focus::-webkit-slider-thumb {
+  -webkit-box-shadow: 0 0 0 10px rgba(66, 133, 244, 0.26);
+  box-shadow: 0 0 0 10px rgba(66, 133, 244, 0.26) !important; }
+
+/* Firefox Now Playing Bar & Now Playing Page */
+.mdl-slider::-moz-range-thumb, .mdl-slider::-moz-range-progress {
+  background: var(--color) !important; }
+
+.mdl-slider:focus::-moz-range-thumb {
+  box-shadow: 0 0 0 10px rgba(66, 133, 244, 0.26) !important; }
+
+/* Progress Bars */
+.itemProgressBarForeground {
+  background-color: var(--color) !important; }
+
+.taskProgressInner {
+  background: var(--color) !important; }
+
+/* Google Progress Bars */
+progress::-webkit-progress-value {
+  background: var(--color) !important; }
+
+/* Firefox Progress Bars */
+progress::-moz-progress-bar {
+  background: var(--color) !important; }
+
+/* Edge Progress Bars */
+progress {
+  background: var(--color) !important; }
+
+/* Main Drawers */
+.navMenuDivider {
+  background: #262626 !important; }
+
+.adminDrawerLogo {
+  border-bottom: 1px solid #262626 !important; }
+
+.mainDrawer {
+  background: #00000058 !important; 
+  backdrop-filter: blur(3px);
+}
+
+.sidebarHeader {
+  color: #bbbbbb !important; }
+
+.navMenuOption {
+  color: #ffffff !important; }
+
+.navMenuOption.navMenuOption-selected {
+  background: #252528 !important;
+  color: var(--color) !important; }
+
+.navMenuOption:hover {
+  background: #252528 !important;
+  color: #9b9b9b !important; }
+ 
+/* Checkbox of all */
+.emby-checkbox:checked+.checkboxLabel::before {
+    border-color: var(--color) !important;
+    background-color: var(--color);
+	background: var(--color;);
+}  
+
+/* Metadata Editor */
+div.jstree-wholerow.jstree-wholerow-clicked:hover,
+div.jstree-wholerow.jstree-wholerow-clicked,
+div.jstree-wholerow.jstree-wholerow-hovered {
+  background: #252528 !important; }
+
+.jstree-anchor.jstree-clicked,
+.jstree-anchor.jstree-clicked.jstree-hovered {
+  background: #252528 !important;
+  color: var(--color) !important; }
+
+/* Multi-select */
+.itemSelectionPanel {
+  border: 1px solid var(--color) !important; }
+
+.selectionCommandsPanel {
+  background: #00000000 !important; 
+  backdrop-filter: blur(10px);
+  color: var(--color); }
+
+/* upNextDialog */
+.upNextDialog-countdownText {
+  color: var(--color) !important; }
+
+/* Selection Bars */
+.emby-select-selectionbar, .emby-textarea-selectionbar,
+.emby-input-selectionbar {
+  background-color: var(--color) !important; }
+
+/* Media Info Detail Image */
+.itemDetailImage.loaded:hover {
+  border: 1px solid var(--color) !important; }
+
+
+/* 1.3 Fixes */
+/* ------------------ 2. MISCELLANEOUS MODIFICATIONS ----------------- */
+/* ----- 2.1 Buttons ----- */
+/* Circles */
+.fab {
+  background-color: transparent !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  -webkit-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important; }
+
+/* ----- 2.2 Details ----- */
+/* 2.2.1 Scrollbars */
+/* Google Chrome */
+::-webkit-scrollbar-corner {
+  background-color: #3B3B3B; }
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: #3B3B3B; }
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background: #888888; }
+
+/* Google Chrome - Dashboard Drawer */
+div.scrollContainer.smoothScrollY::-webkit-scrollbar-corner {
+  background-color: transparent !important; }
+
+div.scrollContainer.smoothScrollY::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+  background-color: transparent !important; }
+
+div.scrollContainer.smoothScrollY::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background: #888888; }
+
+/* Google Chrome - Filter Dialog */
+.dynamicFilterDialog::-webkit-scrollbar-corner {
+  background-color: transparent !important; }
+
+.dynamicFilterDialog::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+  background-color: transparent !important; }
+
+.dynamicFilterDialog::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background: #888888; }
+  
+/* 2.2.2 Logos */
+/* Login Page */
+.imgLogoIcon {
+  content: url(https://cdn.rawgit.com/BenZuser/Emby-Dark-Themes-Resources/master/images/logos-and-icons/BLUE/logo.png) !important; }
+
+/* Main Drawer Mobile */
+.adminDrawerLogo img {
+  content: url(https://cdn.rawgit.com/BenZuser/Emby-Dark-Themes-Resources/master/images/logos-and-icons/BLUE/logo.png) !important; }
+
+/* Home Page */
+.pageTitleWithLogo {
+  background-image: url(https://cdn.rawgit.com/BenZuser/Emby-Dark-Themes-Resources/master/images/logos-and-icons/BLUE/logo.png) !important; }
+
+/* 2.2.3 Others	*/
+/* CSS Box */
+#txtCustomCss {
+  height: 300px !important;
+  overflow-y: scroll !important; }
+
+/* Select Box */
+select option {
+  background-color: var(--color) !important;
+  color: #ffffff !important; }
+
+/* Dialogs */
+.formDialogHeader:not(.formDialogHeader-clear),
+.formDialogFooter:not(.formDialogFooter-clear) {
+  background-color: #121212 !important;
+  color: #fff; }
+
+/* background head on animation */  
+.headroom-scrolling {
+	background: #00000058 !important; 
+    backdrop-filter: blur(10px); 
+}
+
+/* Headers */
+.appfooter {
+  background: #00000058 !important; 
+  backdrop-filter: blur(10px);
+  color: #fff !important; }
+  
+/* Tabs */
+
+/* transparent tabs */
+.tabs-viewmenubar-backgroundcontainer {
+    background: #00006600 !important;
+}
+
+
+@supports (backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px)) {
+  .appfooter-blurred {
+    background: rgba(24, 24, 24, 0.7) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    backdrop-filter: blur(20px) !important; } }
+/* TV Global Modifications */
+.emby-tab-button-active.emby-button-tv {
+  color: #fff !important; }
+  
+.guide-channelHeaderCell, .guide-channelTimeslotHeader {
+  background: #2e2e2e !important; }
+
+.guide-programTextIcon {
+  color: #1e1e1e !important;
+  background: #555 !important; }
+
+.guide-headerTimeslots {
+  color: #ccc !important; }
+
+/* ----- 2.3 Fixes ----- */
+/* 2.3.1 Dark Colors */
+.autoorganizetable tbody tr:nth-child(odd) td, .autoorganizetable tbody tr:nth-child(odd) th {
+  background-color: #222326 !important; }
+
+.autoorganizetable > .table > tbody > tr {
+  border: 1px solid #222326 !important; }
+  
+/* TEMPORARY FIXES */
+/* Links */
+.searchSuggestionsList a, .noItemsMessage a, a.lnkPremiere {
+  color: var(--color) !important; }
+
+.searchSuggestionsList a:hover, .noItemsMessage a:hover,
+a.lnkPremiere:hover {
+  color: #9b9b9b !important; }
+
+.searchSuggestionsList a:active, .noItemsMessage a:active,
+a.lnkPremiere:active {
+  color: #0C57D6 !important; }
+  
+/* Hide Emby Premier Botton */
+.btnHeaderPremiere { display: none ! important; }
+
+/* PROGRESS BAR - CHROME */
+.emby-slider::-webkit-slider-thumb, .sliderBubble {
+   background: #52b54b !important;
+}
+.emby-slider-background-lower {
+   background: linear-gradient(to right, var(--color) 0%,var(--color) 50%,#8400ff 100%) !important;
+   background: linear-gradient(to right, var(--color) 0%,var(--color) 50%,#8400ff 100%) !important;
+   background: -webkit-linear-gradient(left, var(--color) 0%,var(--color) 50%,#8400ff 100%) !important;
+}
+progress::-webkit-progress-value {
+   background: linear-gradient(to right, var(--color) 0%,var(--color) 50%,#8400ff 100%) !important;
+   background: -webkit-linear-gradient(left, var(--color) 0%,var(--color) 50%,#8400ff 100%) !important;
+}
+
+.nowPlayingBar {
+     backdrop-filter: saturate(1.8) blur(1.5em);
+     background-color: rgba(0, 0, 0, 0.0);
+}
+
+/* Try to make Filter and three dots dropdowns transparent and blurry */
+.focuscontainer.dialog {backdrop-filter: saturate(1.8) blur(1.5em);}
+.focuscontainer.dialog {background-color: rgba(0, 0, 0, 0.3);}
+
+/* Try to make Filter and three dots dropdowns transparent and blurry mediaplayer */
+.nowPlayingBarTop {backdrop-filter: saturate(1.8) blur(1.5em);}
+.nowPlayingBarTop {background-color: rgba(0, 0, 0, 0.3);}
+
+/* background blan on adm panel */
+/* 3.2.3 Backgrounds */
+
+.paperList, .visualCardBox, .formDialogHeader:not(.formDialogHeader-clear) {
+    background-color: #222326 !important; }
+	
+.formDialogFooter:not(.formDialogFooter-clear) {
+    background-color: #222326 !important;
+    border-top: 1px solid #222326 !important;	}
+
+.sessionCardFooter {
+    border-top: 1px solid #383838 !important; }
+
+.collapseContent {
+    background-color: #121212 !important; }
+
+.emby-select-withcolor {
+    color: inherit;
+    background: #383838 !important;
+    border: .07em solid rgba(0,0,0,.158);
+    -webkit-border-radius: .15em;
+    border-radius: .15em; }
+
+.emby-input, .emby-textarea, .emby-button {
+    color: var(--color);
+    background: #6d6d6d24 !important;
+    border: .07em solid rgba(0,0,0,.158);
+    -webkit-border-radius: 2.15em;
+    border-radius: 2.15em;
+	backdrop-filter: saturate(0.5) blur(2.0em);}
+	
+.emby-select-withcolor:focus {
+    border-color: var(--color)!important;
+}
+
+.navMenuOption-selected {
+    background-color: var(--color)!important;
+}
+
+/* login screen edit */
+/*Shrink Login Form*/	
+#loginPage .readOnlyContent, form {
+    max-width: 27em; }
+
+#loginPage .button-submit  {
+    background: var(--color); }
+	
+#loginPage .inputLabelFocused {
+	color: var(--color) !important;}
+	
+.emby-input:focus-visible, .emby-textarea:focus-visible {
+	box-shadow: 0 0 0 .2rem hsl(208.64deg 43.27% 51.68% / 60%) !important;
+}
+
+#loginPage .checkboxOutline, .emby-input:focus {
+	border-color: var(--color) !important; }
+	
+#loginPage .checkboxOutline {
+	background-color: var(--color) !important; }
+
+/* Background of login screen */
+.backgroundContainer {
+    background: var(--wallpaper) center top no-repeat #033361;
+    -webkit-background-size: cover;
+    background-size: cover;
+	/*backdrop-filter: blur(10px);*/
+	-webkit-filter: blur(10px);
+}
+
+#loginPage {  
+	background-image: var(--wallpaper);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-size: contain;
+	background-repeat: no-repeat;
+	backdrop-filter: blur(10px);
+	-webkit-filter: blur(10px);
+}
+
+/* Hide boton of forgot password */
+.btnForgotPassword {
+	display: none;
+}
+
+/* all font color */
+body {
+    color: var(--color);
+}
