@@ -1,6 +1,8 @@
 # Music player visual mod
 **This mod is only for Jellyfin servers!!!**
-![Alt text](images/Screenshot_of_mod.png "Home Screen")
+
+![Alt text](../images/Screenshot_of_mod.png "Mod Player for Jellyfin")
+
 
 ## How to apply the mod
 - You need to add the content of file player_background_blur.js on your index.html
