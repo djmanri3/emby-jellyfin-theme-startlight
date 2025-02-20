@@ -2,9 +2,6 @@
         const imgElement2 = document.getElementsByClassName('nowPlayingImage')[0].attributes[1].nodeValue;
         const imgElement3 = imgElement2.replace('background-image: ', '');
         const imgElement = imgElement3.replace(';', '');
-        //const start = imgElement.indexOf('url(') + 4; // Encuentra el índice donde comienza la URL
-        //const end = imgElement.indexOf(')', start); // Encuentra el índice donde termina la URL
-        //const imageUrl = imgElement.substring(start, end).replace(/['"]/g, ''); // Extrae y limpia las comillas
 
         var styles = `
             .backgroundContainer {
