@@ -19,7 +19,7 @@
   /jellyfin/jellyfin-web/index.html
   ```
 
-- Now search </body></html> and before paste the content of **player_background_blur.js**
+- Now search `</body></html>` and before of `</body>` paste the content of **player_background_blur.js**
 
 - Refresh your browser and the mod is applied!
 
