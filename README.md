@@ -17,7 +17,11 @@ Only acces to **server settings**, open **general settings** and add all code of
 
 ### Player Screen
 #### Jellyfin
-![Alt text](images/3.png "Player Screen Jellyfin")
+##### Default
+![Alt text](images/3.png "Player Screen Jellyfin Default")
+
+##### With mod
+![Alt text](images/Screenshot_of_mod.png "Player Screen Jellyfin Mod")
 
 #### Emby
 ![Alt text](images/4.png "Player Screen Jellyfin")
