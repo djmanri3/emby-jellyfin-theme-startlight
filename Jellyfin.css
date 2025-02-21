@@ -5,11 +5,11 @@
 /* Apply wallpaper and color */
 :root {
 	 /* --wallpaper: url('https://img.freepik.com/free-photo/panoramic-view-dubai-city-illuminated-neon-spectrum_23-2151305329.jpg'); /* Wallpaper Neon City */
-         --wallpaper: url('https://images.pling.com/img/00/00/49/90/47/1361442/ee6523267a2650f972201ddab5fdea9c297a.jpg');
+        --wallpaper:url('https://images.pling.com/img/00/00/49/90/47/1361442/ee6523267a2650f972201ddab5fdea9c297a.jpg');
 	 --color: #00ffea /* Blue Theme */
-        /*--color: #d370fa /* Purple Theme */
+        /* --color: #d370fa /* Purple Theme */
         /* --color: #f56470 /* Red Theme */
-       /* --color: #52B54B /* Green Theme */
+        /* --color: #52B54B /* Green Theme */
 }
 
 .paper-icon-button-light.md-icon {
@@ -594,11 +594,22 @@ body {
     flex-grow: 1;
     overflow-y: scroll;
     overflow: auto;
-    height: 57em;
-    width: 90%;
+    height: 52em;
+    width: 103% !important;
     scrollbar-color: var(--color) rgb(0, 0, 0, 0);
-    backdrop-filter: saturate(0.9) blur(90px);
+    backdrop-filter: saturate(0.9) blur(140px)  brightness(0.8);
     border-radius: 10px;
+    position: relative;
+    left: 80px !important;
+}
+
+.listItem-border {
+  border-color: rgba(34, 34, 34, 0.03) !important;
+}
+
+.playlistSectionButton {
+    position: relative;
+    left: 10%;
 }
 
 .nowPlayingInfoContainer {
@@ -615,6 +626,7 @@ body {
         margin-left: 60%;
         margin-top: 35%;
         margin-bottom: 10%;
+        border-radius: 2%;
 
      }
 
