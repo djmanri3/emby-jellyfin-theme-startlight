@@ -8,7 +8,7 @@
               background: --var(wallpaper) center top no-repeat #033361;
               -webkit-background-size: cover;
               background-size: cover;
-              background-position: center;
+              background-position: center !important;
               backdrop-filter: saturate(0.5) blur(50px) brightness(-1) !important;
               -webkit-filter: blur(50px) !important;
           }
