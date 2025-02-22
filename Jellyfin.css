@@ -6,7 +6,11 @@
 :root {
 	 /* --wallpaper: url('https://img.freepik.com/free-photo/panoramic-view-dubai-city-illuminated-neon-spectrum_23-2151305329.jpg'); /* Wallpaper Neon City */
         --wallpaper:url('https://images.pling.com/img/00/00/49/90/47/1361442/ee6523267a2650f972201ddab5fdea9c297a.jpg');
-	 --color: #00ffea /* Blue Theme */
+	    --color: #00ffea; /* Blue Theme */
+        /*--position-player: inline-end;*/ /* Player on Right */
+        --position-player: inline-start; /* Player on Left */
+
+        /*--position-player: "inline-start" */ /* Player on Left */
         /* --color: #d370fa /* Purple Theme */
         /* --color: #f56470 /* Red Theme */
         /* --color: #52B54B /* Green Theme */
@@ -378,6 +382,17 @@ div.scrollContainer.smoothScrollY::-webkit-scrollbar-thumb {
   border-radius: 2px;
   background: #888888; }
 
+/* Fix fav button */
+[dir=ltr] .nowPlayingInfoControls .nowPlayingPageUserDataButtonsTitle button {
+    padding: 5% !important;
+}
+
+/* Only apply on portrait */
+@media (orientation: portrait) and (max-width: 43em) {
+    .nowPlayingInfoControls .nowPlayingPageUserDataButtonsTitle button {
+        border-radius: 50% !important;
+    }
+}
 
 /* 2.2.3 Others	*/
 /* CSS Box */
@@ -645,8 +660,8 @@ body {
      }
 
     .nowPlayingInfoContainer {
-        float: left; /* Esto alinea el contenedor a la izquierda */
-        width: 40%; /* 50% Ajusta el ancho según sea necesario */
+        float: var(--position-player); /* Esto alinea el contenedor a la izquierda */
+        width: 37%; /* 50% Ajusta el ancho según sea necesario */
     }
 
     .nowPlayingInfoContainerMedia{
