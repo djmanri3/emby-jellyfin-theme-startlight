@@ -9,8 +9,8 @@
               -webkit-background-size: cover;
               background-size: cover;
               background-position: center !important;
-              backdrop-filter: saturate(0.5) blur(50px) brightness(-1) !important;
-              -webkit-filter: blur(50px) !important;
+              backdrop-filter: saturate(0.5) blur(80px) brightness(0) !important;
+              -webkit-filter: saturate(0.5) blur(80px) brightness(0) !important;
           }
 
           :root{
