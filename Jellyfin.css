@@ -665,6 +665,6 @@ body {
 /*** Reproductor vista tablet fix ***/
 @media (min-width: 63em) {
     .nowPlayingPage {
-        padding: 3em 0 0 0 !important;
+        padding: 6em 0 0 0 !important;
     }
 }
