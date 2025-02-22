@@ -6,8 +6,8 @@
 :root {
 	 /* --wallpaper: url('https://img.freepik.com/free-photo/panoramic-view-dubai-city-illuminated-neon-spectrum_23-2151305329.jpg'); /* Wallpaper Neon City */
         --wallpaper:url('https://images.pling.com/img/00/00/49/90/47/1361442/ee6523267a2650f972201ddab5fdea9c297a.jpg');
-	    --color: #00ffea; /* Blue Theme */
-        /*--position-player: inline-end;*/ /* Player on Right */
+	      --color: #00ffea; /* Blue Theme */
+        /*--position-player: inline-end; */ /* Player on Right */
         --position-player: inline-start; /* Player on Left */
 
         /*--position-player: "inline-start" */ /* Player on Left */
@@ -634,6 +634,8 @@ body {
     align-content: center;
     align-items: baseline;
 }
+
+/* landscape player */
 @media all and (orientation: landscape) { 
      .nowPlayingPageImage {
           /*width: 470% !important;*/
@@ -676,6 +678,47 @@ body {
         width: 55%; /* Ajusta el ancho según sea necesario */
     }
 }
+
+/* portrait player */
+@media all and (orientation: portrait) {
+
+  .remoteControlContent{
+    padding-left: 1%!important;
+    padding-right: 1%!important;
+    padding-top: 1%!important;
+  }
+
+  .nowPlayingInfoControls{
+    padding-bottom: 10%;
+  }
+
+  .vertical-list{
+    left: 0px !important;
+  }
+
+  .playlistSectionButton{
+    left: 0px !important;
+  }
+
+  .nowPlayingPage {
+    padding: 0em 0 0 0 !important;
+  }
+
+  .nowPlayingInfoContainerMedia{
+    margin-bottom: 5em;
+  }
+
+  .nowPlayingPageImage {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .nowPlayingPageImageContainer{
+    position: relative;
+    padding-bottom: 25%;
+  }
+}
+
 
 /*** Reproductor vista tablet fix ***/
 @media (min-width: 63em) {
