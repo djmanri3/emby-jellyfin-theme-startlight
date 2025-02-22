@@ -1,7 +1,7 @@
 # Theme **STARLIGHT**
 This is my theme of Jellyfin and Emby servers.
 
-## CAHNGES
+## CHANGES
 - [21/02/2025] Add mod for Jellyfin for music player
 - [22/02/2025] Add more blur for white covers and fix brightness and more top space
 - [22/02/2025] Add variable position-player values:
