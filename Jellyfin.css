@@ -722,6 +722,17 @@ body {
 	top: 3.0em !important;
 	padding: 0 0em;
   }
+
+  .layout-mobile .playlistSection .contextMenu, .layout-mobile .playlistSection .playlist{
+      top: 3.0em !important;
+      padding: 0 0em;
+      background-color: rgb(0, 0, 0, 0) !important;
+      backdrop-filter: saturate(0.5) blur(80px) brightness(1) !important;
+ }
+
+    .layout-mobile .playlistSectionButton{
+        background-color: transparent;
+    }
 }
 
 
