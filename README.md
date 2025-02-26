@@ -8,6 +8,7 @@ This is my theme of Jellyfin and Emby servers, this theme will be tried on Jelly
   - Inline-end: Player on the right
   - Inline-start: Player on the left
  - [22/02/2025] Add new UI for music player in a phone app
+ - ]26/02/2025] Fix position of playlist on phone app, add blur on playlist and buttons of playlist background
 
 ![Alt text](images/Screenshot_of_mod.png "Home Screen")
 
