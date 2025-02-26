@@ -717,6 +717,11 @@ body {
     position: relative;
     padding-bottom: 25%;
   }
+
+  .layout-mobile .playlistSection .contextMenu, .layout-mobile .playlistSection .playlist{
+	top: 3.0em !important;
+	padding: 0 0em;
+  }
 }
 
 
