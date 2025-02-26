@@ -1,5 +1,5 @@
 # Theme **STARLIGHT**
-This is my theme of Jellyfin and Emby servers.
+This is my theme of Jellyfin and Emby servers, this theme will be tried on Jellyfin 10.10.6.
 
 ## CHANGES
 - [21/02/2025] Add mod for Jellyfin for music player
