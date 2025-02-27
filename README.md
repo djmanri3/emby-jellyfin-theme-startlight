@@ -49,7 +49,10 @@ More info if you want to install Javascript mod on folder **jellyfin-mods**
 ###### 2. With mod
 ![Alt text](images/Screenshot_of_mod.png "Player Screen Jellyfin Mod")
 #### Phone App
-<img src="images/3_phone.jpg" alt="Home Screen Phone" width="200" height="400">
+<img src="images/3_phone.jpg" alt="Home Screen Phone" width="200" height="400"> <img src="images/4_phone.jpg" alt="Home Screen Phone" width="200" height="400">
+
+#### Tablet App
+<img src="images/1_tablet.jpg" alt="Home Screen Phone">
 
 #### Emby
 ![Alt text](images/4.png "Player Screen Jellyfin")
