@@ -7,8 +7,8 @@
 	 /* --wallpaper: url('https://img.freepik.com/free-photo/panoramic-view-dubai-city-illuminated-neon-spectrum_23-2151305329.jpg'); /* Wallpaper Neon City */
         --wallpaper:url('https://images.pling.com/img/00/00/49/90/47/1361442/ee6523267a2650f972201ddab5fdea9c297a.jpg');
 	      --color: #00ffea; /* Blue Theme */
-        /*--position-player: inline-end; */ /* Player on Right */
-        --position-player: inline-start; /* Player on Left */
+        /*--position-player: inline-end;*/ /* Player on Right */
+          --position-player: inline-start; /* Player on Left */
 
         /*--position-player: "inline-start" */ /* Player on Left */
         /* --color: #d370fa /* Purple Theme */
@@ -19,7 +19,7 @@
 .paper-icon-button-light.md-icon {
   background: #00000000 !important; 
   backdrop-filter: blur(10px);
-  color: var(--color)
+  color: var(--color);
 }
 
 html:root {
@@ -289,7 +289,7 @@ progress {
 .emby-checkbox:checked+.checkboxLabel::before {
     border-color: var(--color) !important;
     background-color: var(--color);
-	background: var(--color;);
+	background: var(--color);
 }  
 
 /* Metadata Editor */
@@ -609,8 +609,8 @@ body {
     flex-grow: 1;
     overflow-y: scroll;
     overflow: auto;
-    height: 52em;
-    width: 103% !important;
+    height: 50em;
+    width: 100% !important;
     scrollbar-color: var(--color) rgb(0, 0, 0, 0);
     backdrop-filter: saturate(0.9) blur(140px)  brightness(0.8);
     border-radius: 10px;
@@ -719,26 +719,64 @@ body {
   }
 
   .layout-mobile .playlistSection .contextMenu, .layout-mobile .playlistSection .playlist{
-	top: 3.0em !important;
-	padding: 0 0em;
-  }
-
-  .layout-mobile .playlistSection .contextMenu, .layout-mobile .playlistSection .playlist{
-      top: 3.0em !important;
+      top: 0em !important;
       padding: 0 0em;
+      width: 100% !important;
+      height: 75%;
       background-color: rgb(0, 0, 0, 0) !important;
       backdrop-filter: saturate(0.5) blur(80px) brightness(1) !important;
+     overflow-x: hidden;
  }
 
     .layout-mobile .playlistSectionButton{
         background-color: transparent;
     }
+
+    ::-webkit-scrollbar-track-piece{
+        background-color: rgba(0, 0, 0,0);
+    }
 }
 
 
-/*** Reproductor vista tablet fix ***/
+/*** Playing page for tablet ***/
 @media (min-width: 63em) {
     .nowPlayingPage {
         padding: 6em 0 0 0 !important;
     }
+}
+
+/*** player on tablet ***/
+@media (orientation: landscape) {
+
+  /*** fix position of music player ***/
+  .layout-mobile .playlistSection .contextMenu, .layout-mobile .playlistSection .playlist{
+      top: 4.0em !important;
+      padding: 0 0em;
+      width: 55% !important;
+      background-color: rgb(0, 0, 0, 0) !important;
+      backdrop-filter: saturate(0.5) blur(80px) brightness(1) !important;
+      overflow-x: hidden;
+      display: block !important;
+ }
+   /*** fix position of playlist ***/
+   .layout-mobile .vertical-list{
+     left: 37% !important;
+  }
+
+   /*** button transparent background on player ***/
+   .layout-mobile .playlistSectionButton{
+        background-color: transparent;
+    }
+
+   /*** fix volumen control position ***/
+   .layout-mobile .playlistSectionButton .volumecontrol{
+        padding-right: 74%;
+        padding-bottom: 7%;
+        padding-left: 7%;
+   }
+
+   .layout-mobile .playlistSectionButton .btnTogglePlaylist{
+      display: none;
+   }
+
 }
