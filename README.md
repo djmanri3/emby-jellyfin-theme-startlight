@@ -9,6 +9,7 @@ This is my theme of Jellyfin and Emby servers, this theme will be tried on Jelly
   - Inline-start: Player on the left
  - [22/02/2025] Add new UI for music player in a phone app
  - [26/02/2025] Fix position of the playlist on phone app, add blur on playlist and buttons of playlist background
+ - [27/02/2025] Add style for tablet app, change playlist position on phone app, fix some paddins, fix color for box-check
 
 ![Alt text](images/Screenshot_of_mod.png "Home Screen")
 
