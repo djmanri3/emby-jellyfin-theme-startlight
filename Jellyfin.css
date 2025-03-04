@@ -527,7 +527,7 @@ progress::-webkit-progress-value {
 .emby-input, .emby-textarea, .emby-button {
     color: var(--color);
     background: #6d6d6d00 !important;
-    border: .07em solid rgba(0,0,0,.158);
+    border: 0.01em solid rgba(0,0,0,0);
     -webkit-border-radius: 2.15em;
     border-radius: 2.15em;
 	backdrop-filter: saturate(0.9) blur(2.0em);}
@@ -612,7 +612,7 @@ body {
     height: 50em;
     width: 100% !important;
     scrollbar-color: var(--color) rgb(0, 0, 0, 0);
-    backdrop-filter: saturate(0.9) blur(140px)  brightness(0.8);
+    backdrop-filter: saturate(1.2) blur(140px)  brightness(0.8);
     border-radius: 10px;
     position: relative;
     left: 80px !important;
@@ -724,7 +724,7 @@ body {
       width: 100% !important;
       height: 75%;
       background-color: rgb(0, 0, 0, 0) !important;
-      backdrop-filter: saturate(0.5) blur(80px) brightness(1) !important;
+      backdrop-filter: saturate(1.2) blur(80px) brightness(0.8) !important;
      overflow-x: hidden;
  }
 
@@ -738,23 +738,23 @@ body {
 }
 
 
-/*** Playing page for tablet ***/
+/*** Reproductor vista tablet fix ***/
 @media (min-width: 63em) {
     .nowPlayingPage {
         padding: 6em 0 0 0 !important;
     }
 }
 
-/*** player on tablet ***/
+/*** center player on tablet ***/
 @media (orientation: landscape) {
 
   /*** fix position of music player ***/
   .layout-mobile .playlistSection .contextMenu, .layout-mobile .playlistSection .playlist{
-      top: 4.0em !important;
+      top: 12% !important;
       padding: 0 0em;
       width: 55% !important;
       background-color: rgb(0, 0, 0, 0) !important;
-      backdrop-filter: saturate(0.5) blur(80px) brightness(1) !important;
+      backdrop-filter: saturate(1.2) blur(140px)  brightness(0.8);
       overflow-x: hidden;
       display: block !important;
  }
@@ -779,4 +779,44 @@ body {
       display: none;
    }
 
+   /*** fix list on album folder... ***/
+   .layout-mobile .childrenItemsContainer {
+      left: 0px !important;
+      display: block;
+      width: 95% !important;
+   }
+
 }
+
+/*** blur on time song hover ***/
+.sliderBubble {
+    background: #4ead4800 !important;
+    backdrop-filter: blur(200px);
+    border-radius: 10%;
+}
+
+/*** style of volume control ***/
+.iconOsd {
+    background: #4ead4800 !important;
+    backdrop-filter: blur(20px);
+    border-radius: 10%;
+}
+
+/*** DESKTOP fix list on album folder... ***/
+.childrenItemsContainer {
+   left: 0px !important;
+  display: block;
+  width: 95% !important;
+}
+
+/* enfasis color of album on timeline */
+  .nowPlayingPage .mdl-slider-background-lower {
+    background: radial-gradient(transparent, transparent);
+    backdrop-filter: blur(200px) saturate(4) brightness(1);
+}
+
+/* remove box on focus */
+:focus {
+    outline: var(--color) auto 0px;
+}
+

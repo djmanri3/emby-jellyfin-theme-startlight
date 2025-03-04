@@ -10,6 +10,7 @@ This is my theme of Jellyfin and Emby servers, this theme will be tried on Jelly
  - [22/02/2025] Add new UI for music player in a phone app
  - [26/02/2025] Fix position of the playlist on phone app, add blur on playlist and buttons of playlist background
  - [27/02/2025] Add style for tablet app, change playlist position on phone app, fix some paddins, fix color for box-check
+ - [04/03/2025] More define blur, fix padding playlist on player, fix box when click on time line song, add blur on time song hover, add enfasis color of álbum on player and add blur on volumen control overlay
 
 ![Alt text](images/Screenshot_of_mod.png "Home Screen")
 
