@@ -1,6 +1,8 @@
 # Theme **STARLIGHT**
 This is my theme of Jellyfin and Emby servers, this theme will be tried on Jellyfin 10.10.6.
 
+If you change the primary color of UI, copy all CSS file and modify the CSS var --color to HEX color
+
 ## CHANGES
 - [21/02/2025] Add mod for Jellyfin for music player
 - [22/02/2025] Add more blur for white covers and fix brightness and more top space
