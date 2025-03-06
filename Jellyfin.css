@@ -716,6 +716,8 @@ body {
   .nowPlayingInfoControls{
     padding-bottom: 0%;
     position: relative;
+    top: 7%;
+
   }
 
   .infoContainer{
@@ -726,7 +728,7 @@ body {
 
   .nowPlayingButtonsContainer{
     position: relative;
-    top: 28%;
+    top: 5%;
   }
 
   .vertical-list{
