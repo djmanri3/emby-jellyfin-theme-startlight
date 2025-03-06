@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/946b9777-e3e0-4aed-a3b8-d143cffae966)# How Change Primary Color Of Theme
+# How Change Primary Color Of Theme
 
 Copy you color do you want on https://htmlcolorcodes.com/ (copy only code that begins with "#")
 
