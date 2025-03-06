@@ -1,4 +1,6 @@
 # Theme **STARLIGHT**
+![Alt text](images/Screenshot_of_mod.png "Home Screen")
+
 This is my theme of Jellyfin and Emby servers, this theme will be tried on Jellyfin 10.10.6.
 
 ## CHANGES
@@ -23,8 +25,6 @@ This is my theme of Jellyfin and Emby servers, this theme will be tried on Jelly
     - Fix tablet format when change position of player
     - Fix tablet format bottons playlist (save playlist and more options)
     - Fix mobile format bottons playlist (save playlist and more options)
-
-![Alt text](images/Screenshot_of_mod.png "Home Screen")
 
 ## How Install
 [!IMPORTANT]
