@@ -22,7 +22,7 @@ Only copy this code and apply on Dashboard > general settings add on Custom CSS 
   --position-player: inline-start;
 }
 ```
-![Alt text](./Left.png")
+![Alt text](./Left.png)
 
 ## Right
 ```
@@ -32,4 +32,4 @@ Only copy this code and apply on Dashboard > general settings add on Custom CSS 
   --position-player: inline-end;
 }
 ```
-![Alt text](./Right.png")
+![Alt text](./Right.png)
