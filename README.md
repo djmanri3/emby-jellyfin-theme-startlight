@@ -27,8 +27,8 @@ This is my theme of Jellyfin and Emby servers, this theme will be tried on Jelly
     - Fix mobile format bottons playlist (save playlist and more options)
 
 ## How Install
-[!IMPORTANT]
-If you want background albun cover with blur, you need apply [this mod] (https://github.com/djmanri3/emby-jellyfin-theme-startlight/tree/main/jellyfin-mods/)
+>[!IMPORTANT]
+>If you want background albun cover with blur, you need apply [this mod] (https://github.com/djmanri3/emby-jellyfin-theme-startlight/tree/main/jellyfin-mods/)
 
 Access to **Dashboard**, open **general** settings and add on **Custom CSS code**:
 - Jellyfin
