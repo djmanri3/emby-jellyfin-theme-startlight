@@ -1,8 +1,6 @@
 # Theme **STARLIGHT**
 This is my theme of Jellyfin and Emby servers, this theme will be tried on Jellyfin 10.10.6.
 
-If you change the primary color of UI, copy all CSS file and modify the CSS var --color to HEX color
-
 ## CHANGES
 - [21/02/2025] Add mod for Jellyfin for music player
 - [22/02/2025] Add more blur for white covers and fix brightness and more top space
@@ -13,10 +11,24 @@ If you change the primary color of UI, copy all CSS file and modify the CSS var 
  - [26/02/2025] Fix position of the playlist on phone app, add blur on playlist and buttons of playlist background
  - [27/02/2025] Add style for tablet app, change playlist position on phone app, fix some paddins, fix color for box-check
  - [04/03/2025] More define blur, fix padding playlist on player, fix box when click on time line song, add blur on time song hover, add enfasis color of álbum on player and add blur on volumen control overlay
+ - [06/03/2025]
+    - Add more easy tutorial to change primary color
+    - Add how change wallpaper
+    - Add how change position of music player (left or right)
+    - Add more responsive UI resize
+    - Fix timeline color of mini player and video player
+    - Fix size of album image when not image album cover
+    - Fix album blur background when not image of album cover
+    - Fix tablet format when change position of player
+    - Fix tablet format bottons playlist (save playlist and more options)
+    - Fix mobile format bottons playlist (save playlist and more options)
 
 ![Alt text](images/Screenshot_of_mod.png "Home Screen")
 
 ## How Install
+[!IMPORTANT]
+If you want background albun cover with blur, you need apply [this mod] (https://github.com/djmanri3/emby-jellyfin-theme-startlight/tree/main/jellyfin-mods/)
+
 Access to **Dashboard**, open **general** settings and add on **Custom CSS code**:
 - Jellyfin
   ```
@@ -28,6 +40,12 @@ Access to **Dashboard**, open **general** settings and add on **Custom CSS code*
   ```
 
 More info if you want to install Javascript mod on folder **jellyfin-mods**
+
+## Jellyfin Mods
+- [Player Background With Album Cover] (https://github.com/djmanri3/emby-jellyfin-theme-startlight/tree/main/jellyfin-mods/)
+- [Change Primary Color] (https://github.com/djmanri3/emby-jellyfin-theme-startlight/tree/main/jellyfin-mods/)
+- [Change Wallpaper] (https://github.com/djmanri3/emby-jellyfin-theme-startlight/tree/main/jellyfin-mods/)
+
 
 ## Screenshots
 
