@@ -744,8 +744,17 @@ body {
     padding: 0em 0 0 0 !important;
   }
 
+  /* title and artis location on phone player */
   .nowPlayingInfoContainerMedia{
     margin-bottom: 5em;
+    position: relative;
+    bottom: 30%;
+  }
+
+  /* like location on phone player */
+  .nowPlayingInfoControls .nowPlayingPageUserDataButtonsTitle{
+    position: relative;
+    top: -30%;
   }
 
   .nowPlayingPageImage, .nowPlayingPageImageContainerNoAlbum {
