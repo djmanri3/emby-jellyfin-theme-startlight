@@ -1,7 +1,7 @@
 # Music player visual mod
 **This mod is only for Jellyfin servers!!!**
 
-![Alt text](../images/Screenshot_of_mod.png "Mod Player for Jellyfin")
+![Alt text](../../images/Screenshot_of_mod.png "Mod Player for Jellyfin")
 
 
 ## How to apply the mod
