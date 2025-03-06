@@ -853,7 +853,8 @@ body {
 
 /*** DESKTOP fix list on album folder... ***/
 .childrenItemsContainer {
-   left: 0px !important;
+  left: 0px !important;
+  top: 1%;
   display: block;
   width: 95% !important;
 }
