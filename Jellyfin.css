@@ -609,7 +609,7 @@ body {
     flex-grow: 1;
     overflow-y: scroll;
     overflow: auto;
-    height: 72vh;
+    height: 80vh;
     width: 100% !important;
     scrollbar-color: var(--color) rgb(0, 0, 0, 0);
     backdrop-filter: saturate(1.2) blur(140px)  brightness(0.8);
