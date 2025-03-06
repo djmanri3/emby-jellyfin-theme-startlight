@@ -16,6 +16,7 @@ This is my theme of Jellyfin and Emby servers, this theme will be tried on Jelly
     - Add how change wallpaper
     - Add how change position of music player (left or right)
     - Add more responsive UI resize
+    - Add music player on landscape for phone app
     - Fix timeline color of mini player and video player
     - Fix size of album image when not image album cover
     - Fix album blur background when not image of album cover
