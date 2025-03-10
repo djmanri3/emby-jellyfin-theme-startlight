@@ -27,6 +27,8 @@ This is my theme of Jellyfin and Emby servers, this theme will be tried on Jelly
     - Fix mobile format bottons playlist (save playlist and more options)
 - [10/03/2025] Fixed transition to landscape UI to portrait UI, more adjust resize UI and improved landscape mode interface on mobile phones
 
+![Alt text](images/resize-demo.gif)
+
 ## How Install
 >[!IMPORTANT]
 >If you want background album cover with blur, you need apply [this mod](https://github.com/djmanri3/emby-jellyfin-theme-startlight/tree/main/jellyfin-mods/Player%20Background%20Blur)
