@@ -25,6 +25,7 @@ This is my theme of Jellyfin and Emby servers, this theme will be tried on Jelly
     - Fix tablet format when change position of player
     - Fix tablet format bottons playlist (save playlist and more options)
     - Fix mobile format bottons playlist (save playlist and more options)
+- [10/03/2025] Fixed transition to landscape UI to portrait UI, more adjust resize UI and improved landscape mode interface on mobile phones
 
 ## How Install
 >[!IMPORTANT]
