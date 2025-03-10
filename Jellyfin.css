@@ -1,3 +1,4 @@
+/* new css */
 /* font */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
@@ -6,14 +7,14 @@
 :root {
 	 /* --wallpaper: url('https://img.freepik.com/free-photo/panoramic-view-dubai-city-illuminated-neon-spectrum_23-2151305329.jpg'); /* Wallpaper Neon City */
         --wallpaper:url('https://images.pling.com/img/00/00/49/90/47/1361442/ee6523267a2650f972201ddab5fdea9c297a.jpg');
-	      --color: #00ffea; /* Blue Theme */
+	     --color: #00ffea; /* Blue Theme */
         --position-player: inline-start; /* Player on Right */
         /*  --position-player: inline-start;*/ /* Player on Left */
 
         /*--position-player: "inline-start" */ /* Player on Left */
         /* --color: #d370fa /* Purple Theme */
-        /* --color: #f56470 /* Red Theme */
-        /* --color: #52B54B /* Green Theme */
+         /*--color: #f56470 /* Red Theme */
+        /*--color: #52B54B /* Green Theme */
 }
 
 .paper-icon-button-light.md-icon {
@@ -392,6 +393,22 @@ div.scrollContainer.smoothScrollY::-webkit-scrollbar-thumb {
     .nowPlayingInfoControls .nowPlayingPageUserDataButtonsTitle button {
         border-radius: 50% !important;
     }
+
+    .layout-desktop .playlistSectionButton, .layout-tv .playlistSectionButton{
+        display: none;
+    }
+
+    .layout-desktop .volumecontrol {
+        display: none;
+    }
+
+    .layout-desktop .nowPlayingPlaylist, .layout-tv .nowPlayingPlaylist {
+        display: block;
+    }
+
+    .layout-desktop .playlistSection {
+        padding-top: 15%;
+    }
 }
 
 /* 2.2.3 Others	*/
@@ -641,16 +658,30 @@ body {
 
 /* landscape player */
 @media all and (orientation: landscape) { 
-     .nowPlayingPageImage, .nowPlayingPageImageContainerNoAlbum {
-          /*width: 470% !important;*/
-        width: 520% !important;
-        height: 60vh;
-        margin-left: 60%;
-        margin-top: 35%;
-        margin-bottom: 10%;
-        border-radius: 2%;
 
-     }
+    /* fix container image */
+    .nowPlayingPageImageContainer {
+        -webkit-flex-shrink: 0;
+        margin-top: 7%;
+        margin-bottom: -9%;
+        flex-shrink: 0;
+        position: relative;
+        width: 35vw;
+        height: 60vh;
+        display: flex;
+        align-content: space-around;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nowPlayingPageImage, .nowPlayingPageImageContainerNoAlbum {
+        /* width: 470% !important; */
+        width: 29vw;
+        /* height: auto;*/
+        border-radius: 2%;
+        margin-bottom: 9%;
+    }
 
      .nowPlayingButtonsContainer {
         display: -webkit-flex;
@@ -662,6 +693,17 @@ body {
         align-items: center;
      }
 
+     .nowPlayingSecondaryButtons {
+        -webkit-align-items: center;
+        align-items: center;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: flex-end;
+        justify-content: space-evenly;
+     }
+
      .nowPlayingInfoControls{
         width: 100%;
      }
@@ -669,11 +711,13 @@ body {
     .nowPlayingInfoContainer {
         float: var(--position-player); /* Esto alinea el contenedor a la izquierda */
         width: 37%; /* 37% Ajusta el ancho según sea necesario */
+        height: 87vh;
     }
 
     .nowPlayingInfoContainerMedia{
         text-align: center;
         width: 100%;
+        margin-top: 3%;
     }
 
     /* asjust playlist size on desktop */
@@ -684,24 +728,6 @@ body {
         width: 55% !important;
     }
 
-    /* adjust playlist size on tablet app */
-    .layout-mobile .playlistSection {
-        width: auto !important; /* Ajusta el ancho según sea necesario */
-    }
-
-    /* Fix padding playlist tablet app */
-    .layout-mobile .playlistSection {
-        padding-top: 5.4% !important;
-        padding-left: 0.5%;
-        padding-right: 0.5%;
-    }
-
-    .layout-mobile .playlistSection .contextMenu, .layout-mobile .playlistSection .playlist{
-        position: relative;
-        left: auto !important;
-        right: auto !important;
-        width: 95% !important;
-    }
 }
 
 /* portrait player */
@@ -762,6 +788,12 @@ body {
     height: 100% !important;
   }
 
+  /* fix layaout on desktop portrait */
+  .layout-desktop .nowPlayingPageImage, .layout-desktop .nowPlayingPageImageContainerNoAlbum {
+    width: 360% !important;
+    height: 100% !important;
+  }
+
   .nowPlayingPageImageContainer{
     position: relative;
     padding-bottom: 0%;
@@ -775,7 +807,7 @@ body {
       background-color: rgb(0, 0, 0, 0) !important;
       backdrop-filter: saturate(1.2) blur(80px) brightness(0.8) !important;
      overflow-x: hidden;
- }
+    }
 
     .layout-mobile .playlistSectionButton{
         background-color: transparent;
@@ -797,6 +829,41 @@ body {
 
 /*** center player on tablet ***/
 @media (orientation: landscape) {
+
+    /* adjust playlist size on tablet app */
+    .layout-mobile .playlistSection {
+        width: auto !important; /* Ajusta el ancho según sea necesario */
+    }
+
+    /* Fix padding playlist tablet app */
+    .layout-mobile .playlistSection {
+        padding-top: 5.4% !important;
+        padding-left: 0.5%;
+        padding-right: 0.5%;
+    }
+
+    .layout-mobile .playlistSection .contextMenu, .layout-mobile .playlistSection .playlist{
+        position: relative;
+        left: auto !important;
+        right: auto !important;
+        width: 95% !important;
+    }
+
+    /* fix size of image */
+    .layout-mobile .nowPlayingPageImage, .nowPlayingPageImageContainerNoAlbum {
+        width: 29vw !important;
+        height: auto !important;
+    }
+
+    .layout-mobile .nowPlayingPageImageContainer {
+        padding-top: 1%;
+        padding-bottom: 3%;
+    }
+
+    .layout-mobile .playlistSectionButton .volumecontrol {
+        display: none;
+    }
+
 
   /*** fix position of music player ***/
   .layout-mobile .playlistSection .contextMenu, .layout-mobile .playlistSection .playlist{
@@ -828,12 +895,6 @@ body {
 
    .layout-mobile .playlistSectionButton .btnTogglePlaylist{
       display: none;
-   }
-
-   .layout-mobile .nowPlayingPageImage, .nowPlayingPageImageContainerNoAlbum{
-      width: 50vh !important;
-      height: 50vh;
-      margin-left: 100%;
    }
 
    /*** fix list on album folder... ***/
@@ -885,4 +946,91 @@ body {
 :focus {
     outline: var(--color) auto 0px;
 }
+
+/* fix transition to landscape mode to portrait */
+@media (orientation: portrait) and (max-width: 70em) and (min-width: 43em) {
+    .nowPlayingInfoContainer {
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-flex-direction: column !important;
+        flex-direction: column !important;
+        height: calc(100% - 4.2em);
+        width: 100%;
+    }
+
+    .nowPlayingPageImageContainer {
+        position: relative;
+        padding-top: 5%;
+        padding-bottom: 3%;
+        width: 20%;
+        padding-right: 45%;
+    }
+
+    .nowPlayingInfoControls {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        -webkit-flex-grow: 1;
+        flex-grow: 1;
+        -webkit-justify-content: center;
+        justify-content: center;
+        width: 80%;
+    }
+
+
+    .nowPlayingButtonsContainer{
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .layout-mobile .nowPlayingPageImageContainer {
+        position: relative;
+        padding-top: 5%;
+        padding-bottom: 3%;
+        width: 70%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .layout-mobile .nowPlayingInfoControls {
+        padding-bottom: 0%;
+        position: relative;
+        top: 7%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: stretch;
+        justify-content: space-between;
+    }
+
+    .layout-mobile .nowPlayingButtonsContainer {
+        display: -webkit-flex;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+/* fix size album cover on smartphone landscape */
+@media (orientation: landscape) and (min-width: 384px) and (max-width: 1300px) {
+
+    /* fix size of image */
+    .layout-mobile .nowPlayingPageImage, .nowPlayingPageImageContainerNoAlbum {
+        width: 25.5vw !important;
+        height: 53.8vh !important;
+        margin-top: -26%;
+        margin-bottom: 6%;
+    }
+
+    .layout-mobile .nowPlayingPageImageContainer {
+        position: relative;
+        padding-top:  1% !important;
+        margin-bottom: -30%;
+    }
+}
+
 
