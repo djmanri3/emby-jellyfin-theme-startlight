@@ -620,7 +620,7 @@ body {
 /*** Mods of Music Player ***/
 /* Enable bar to navigate on playlist */
 .vertical-list {
-    display: table-row;
+    display: block;
     -webkit-flex-direction: column;
     -webkit-flex-wrap: nowrap;
     flex-grow: 1;
