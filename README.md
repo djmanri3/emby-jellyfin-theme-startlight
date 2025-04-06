@@ -1,7 +1,7 @@
 # Theme **STARLIGHT**
 ![Alt text](images/Screenshot_of_mod.png "Home Screen")
 
-This is my theme of Jellyfin and Emby servers, this theme will be tried on Jellyfin 10.10.6.
+This is my theme of Jellyfin and Emby servers, this theme will be tried on Jellyfin 10.10.7.
 
 ## CHANGES
 - [21/02/2025] Add mod for Jellyfin for music player
@@ -26,6 +26,7 @@ This is my theme of Jellyfin and Emby servers, this theme will be tried on Jelly
     - Fix tablet format bottons playlist (save playlist and more options)
     - Fix mobile format bottons playlist (save playlist and more options)
 - [10/03/2025] Fixed transition to landscape UI to portrait UI, more adjust resize UI and improved landscape mode interface on mobile phones
+- [06/04/2025] Fixed background album blur on 10.10.7
 
 ![Alt text](images/resize-demo.gif)
 
