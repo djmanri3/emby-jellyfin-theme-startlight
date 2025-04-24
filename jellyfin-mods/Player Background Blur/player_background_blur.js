@@ -1,3 +1,12 @@
+function pause_refresh() {
+      const btnpause = document.querySelector('.btnPlayStateCommand.btnStop.autoSize.paper-icon-button-light');
+      btnpause.addEventListener("click", function() {
+                // Redirect to home page after press pause button
+                window.location = "/web/";
+
+      });
+};
+
 function loadBlur() {
         const imgElement2 = document.getElementsByClassName('nowPlayingImage')[0].attributes[1].nodeValue;
         const imgElement3 = imgElement2.replace('background-image: ', '');
@@ -24,14 +33,15 @@ function loadBlur() {
                 var styleSheet = document.createElement("style")
                 styleSheet.innerText = styles
                 document.head.appendChild(styleSheet)
-
+		
+		pause_refresh();
                 return imgElement;
-            }
         }
+}
 
-    // Call function when page is loaded
-    window.onload = loadBlur;
+// Call function when page is loaded
+window.onload = loadBlur;
 
-    // Lisen change on the DOM  to update background with album image
-    const observer = new MutationObserver(loadBlur);
-    observer.observe(document.body, { childList: true, subtree: true });
+// Lisen change on the DOM  to update background with album image
+const observer = new MutationObserver(loadBlur);
+observer.observe(document.body, { childList: true, subtree: true });
