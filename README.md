@@ -27,6 +27,7 @@ This is my theme of Jellyfin and Emby servers, this theme will be tried on Jelly
     - Fix mobile format bottons playlist (save playlist and more options)
 - [10/03/2025] Fixed transition to landscape UI to portrait UI, more adjust resize UI and improved landscape mode interface on mobile phones
 - [06/04/2025] Fixed background album blur on 10.10.7
+- [24/04/2025] Fix when pause song restore original background
 
 ![Alt text](images/resize-demo.gif)
 
